@@ -33,15 +33,15 @@ body {
           font-size: 20px; }
           body #nav_bar ul li a:hover {
             background-color: #00796B; }
-  body #about-me, body #my-projects, body #something, body #contact {
+  body #about-me, body #something, body #my-projects, body #contact {
     padding: 200px 0;
     background-image: url(./img/code-desktop.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat; }
-  body #my-projects {
-    background-image: url(./img/design-desktop.jpg); }
   body #something {
     background-image: url(./img/mobile-desktop.jpg); }
+  body #my-projects {
+    background-image: url(./img/design-desktop.jpg); }
   body #contact {
     background-image: url(./img/office-desktop.jpg); }
   body .cell {
