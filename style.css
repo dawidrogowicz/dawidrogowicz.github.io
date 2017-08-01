@@ -11,6 +11,9 @@ body {
   body #header-canvas-container {
     width: 100%;
     z-index: -10; }
+    @media only screen and (max-width: 1400px) {
+      body #header-canvas-container {
+        display: none; } }
   body .inv {
     display: none; }
   body .nav-fixed {
@@ -24,18 +27,47 @@ body {
     height: 60px;
     display: inline-block;
     background-color: #222; }
-    body #nav_bar ul {
-      float: right; }
-      body #nav_bar ul li {
-        display: inline-block;
-        margin: 16px 0; }
-        body #nav_bar ul li a {
-          padding: 20px 28px;
-          text-decoration: none;
-          font-family: 'Lato', sans-serif;
-          font-size: 20px; }
-          body #nav_bar ul li a:hover {
-            background-color: #00796B; }
+    body #nav_bar div {
+      height: 100%; }
+      body #nav_bar div #button {
+        display: none;
+        float: right;
+        box-sizing: border-box;
+        padding: 20px 28px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        background-color: #222; }
+        @media only screen and (max-width: 900px) {
+          body #nav_bar div #button {
+            display: block; } }
+        body #nav_bar div #button:hover {
+          background-color: #00796B;
+          cursor: pointer; }
+      body #nav_bar div ul {
+        float: right; }
+        @media only screen and (max-width: 900px) {
+          body #nav_bar div ul {
+            display: none;
+            width: 80%;
+            margin: 0 auto; } }
+        body #nav_bar div ul li {
+          display: inline-block;
+          margin: 16px 0; }
+          @media only screen and (max-width: 900px) {
+            body #nav_bar div ul li {
+              margin: 0;
+              display: block; } }
+          body #nav_bar div ul li a {
+            background: #222;
+            padding: 20px 28px;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px; }
+            @media only screen and (max-width: 900px) {
+              body #nav_bar div ul li a {
+                display: block; } }
+            body #nav_bar div ul li a:hover {
+              background-color: #00796B; }
   body .cell {
     display: table;
     text-align: center;
@@ -86,3 +118,6 @@ footer {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     text-align: center; }
+
+.show {
+  display: block; }
