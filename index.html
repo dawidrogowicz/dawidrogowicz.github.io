@@ -4,6 +4,9 @@
     <title>Dawid Rogowicz</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      dataLayer: [];
+    </script>
     <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -23,11 +26,11 @@
         <div>
           <div id="button">Menu</div>
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#1">ABOUT ME</a></li>
-            <li><a href="#2">TECHNOLOGIES</a></li>
-            <li><a href="#3">MY PROJECTS</a></li>
-            <li><a href="#4">CONTACT</a></li>
+            <li><a href="#" onClick="dataLayer.push({'destination': 'home'})">HOME</a></li>
+            <li><a href="#1" onClick="dataLayer.push({'destination': 'about me'})">ABOUT ME</a></li>
+            <li><a href="#2" onClick="dataLayer.push({'destination': 'technologies'})">TECHNOLOGIES</a></li>
+            <li><a href="#3" onClick="dataLayer.push({'destination': 'my projects'})">MY PROJECTS</a></li>
+            <li><a href="#4" onClick="dataLayer.push({'destination': 'contact'})">CONTACT</a></li>
           </ul>
         </div>
       </nav>
